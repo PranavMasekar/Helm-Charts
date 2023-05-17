@@ -1,0 +1,16 @@
+environment: dev
+
+deployment: 
+  metadataName: simple-web-app-deployment
+  replicas: 1
+  appName: simple-web-app
+  containerName: simple-web-app
+  image: yeasy/simple-web:latest
+  containerPort: 80
+
+service: 
+  metadataName: simple-web-app-service
+  appName: simple-web-app
+  serviceType: NodePort
+  port: 80
+  targetPort: 80
