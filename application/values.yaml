@@ -11,6 +11,6 @@ deployment:
 service: 
   metadataName: simple-web-app-service
   appName: simple-web-app
-  serviceType: LoadBalancer
+  serviceType: NodePort
   port: 80
   targetPort: 80
