@@ -14,3 +14,8 @@ service:
   serviceType: NodePort
   port: 80
   targetPort: 80
+
+hpa:
+  metadataName: simple-web-app-hpa
+  maxReplicas: 3
+  utilization: 40

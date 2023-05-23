@@ -17,3 +17,10 @@ spec:
         image: {{ .Values.deployment.image }}
         ports:
             - containerPort: {{ .Values.deployment.containerPort }}
+        resources:
+          limits:
+            cpu: "1"
+            memory: "750MIi"
+          requests:
+            cpu: "500m"
+            memory: "700Mi"
